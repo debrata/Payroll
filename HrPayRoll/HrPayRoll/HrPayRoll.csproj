@@ -1,0 +1,1655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59034EC1-31C1-4100-B999-03F1BD15ABC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HrPayRoll</RootNamespace>
+    <AssemblyName>HrPayRoll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.VSDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account Form\AddMonthlySalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\AddMonthlySalary.Designer.cs">
+      <DependentUpon>AddMonthlySalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\AddNewCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\AddNewCompany.Designer.cs">
+      <DependentUpon>AddNewCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\AddPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\AddPhoto.Designer.cs">
+      <DependentUpon>AddPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\AppoinmentLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\AppoinmentLetter.Designer.cs">
+      <DependentUpon>AppoinmentLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\BankAdviseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\BankAdviseReport.Designer.cs">
+      <DependentUpon>BankAdviseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\DatabaseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\DatabaseEntry.Designer.cs">
+      <DependentUpon>DatabaseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\DatabaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\DatabaseReport.Designer.cs">
+      <DependentUpon>DatabaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\LeaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\LeaveForm.Designer.cs">
+      <DependentUpon>LeaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\PerformanceAppraisalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\PerformanceAppraisalForm.Designer.cs">
+      <DependentUpon>PerformanceAppraisalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\ProductName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\ProductName.designer.cs">
+      <DependentUpon>ProductName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheet.Designer.cs">
+      <DependentUpon>SalarySheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetHoldListReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetHoldListReport.Designer.cs">
+      <DependentUpon>SalarySheetHoldListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetIndividualReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetIndividualReport.Designer.cs">
+      <DependentUpon>SalarySheetIndividualReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetLocationWiseMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetLocationWiseMonthlyReport.Designer.cs">
+      <DependentUpon>SalarySheetLocationWiseMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetMonthlyReport.Designer.cs">
+      <DependentUpon>SalarySheetMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetPaySlipAllReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySheetPaySlipAllReport.Designer.cs">
+      <DependentUpon>SalarySheetPaySlipAllReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalaryStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalaryStatement.Designer.cs">
+      <DependentUpon>SalaryStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SalarySummaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SalarySummaryReport.Designer.cs">
+      <DependentUpon>SalarySummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\SingleEmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\SingleEmployeeReport.Designer.cs">
+      <DependentUpon>SingleEmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\StockOutEmployeeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\StockOutEmployeeReport.Designer.cs">
+      <DependentUpon>StockOutEmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\TechnicalSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\TechnicalSupport.Designer.cs">
+      <DependentUpon>TechnicalSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\WarningLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\WarningLetter.Designer.cs">
+      <DependentUpon>WarningLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account Form\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account Form\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\AccountStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\AccountStatement.designer.cs">
+      <DependentUpon>AccountStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\BankingStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\BankingStatement.designer.cs">
+      <DependentUpon>BankingStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\CreateOpeningBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\CreateOpeningBalance.Designer.cs">
+      <DependentUpon>CreateOpeningBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\CreditVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\CreditVoucher.designer.cs">
+      <DependentUpon>CreditVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\CustomerAccountPosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\CustomerAccountPosting.designer.cs">
+      <DependentUpon>CustomerAccountPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\CustomerDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\CustomerDatabase.designer.cs">
+      <DependentUpon>CustomerDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\DebitVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\DebitVoucher.designer.cs">
+      <DependentUpon>DebitVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ExpenseHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\ExpenseHead.designer.cs">
+      <DependentUpon>ExpenseHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\IncomeHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\IncomeHead.designer.cs">
+      <DependentUpon>IncomeHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ManualAccountStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\ManualAccountStatement.designer.cs">
+      <DependentUpon>ManualAccountStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\MarketPlanningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts\MarketPlanningForm.designer.cs">
+      <DependentUpon>MarketPlanningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnotherReport\AccountStatementCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountStatementCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\AppoinmentLetterCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppoinmentLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\BankCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\BankStatementCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankStatementCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\ConfirmationLetterCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmationLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CreditVoucherByCreditACCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherByCreditACCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CreditVoucherByCreditACCrystalReportSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherByCreditACCrystalReportSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CreditVoucherByExpenserystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherByExpenserystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CreditVoucherBySLNoCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherBySLNoCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CreditVoucherDatetoDateCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherDatetoDateCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DatabaseCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DateToDateStockOutCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DateToDateStockOutCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DebitVoucherByDebitACCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherByDebitACCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DebitVoucherByDebitACCrystalReportSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherByDebitACCrystalReportSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DebitVoucherByIncomeCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherByIncomeCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DebitVoucherBySLNoCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherBySLNoCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\DebitVoucherDatetoDateCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherDatetoDateCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\JobPromotionLetterCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobPromotionLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\LeaveCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\PerformanceCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetHoldListCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetHoldListCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetIndividualCrystalReport123.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetIndividualCrystalReport123.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetLocationWiseMonthlyCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetLocationWiseMonthlyCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetMonthlyCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetMonthlyCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetNewIndividualReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetNewIndividualReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySheetSummaryCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetSummaryCrystalReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="AnotherReport\SalaryStatementCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalaryStatementCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySummaryCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySummaryCrystalReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="AnotherReport\SalarySummaryCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySummaryCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SingleDatabaseCrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleDatabaseCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\StockCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\StockOutCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockOutCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\SummerySheetNewReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummerySheetNewReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnotherReport\WarningLetterCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarningLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseDataSet.Designer.cs" />
+    <Compile Include="DatabaseDataSet1.Designer.cs" />
+    <Compile Include="DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AccountStatementDataSet.Designer.cs" />
+    <Compile Include="DataSets\AccountStatementDataSet1.Designer.cs" />
+    <Compile Include="DataSets\AccountStatementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountStatementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AppoinmentDataSet.Designer.cs" />
+    <Compile Include="DataSets\AppoinmentDataSet1.Designer.cs" />
+    <Compile Include="DataSets\AppoinmentDataSet2.Designer.cs" />
+    <Compile Include="DataSets\AppoinmentDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppoinmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\BankDataSet.Designer.cs" />
+    <Compile Include="DataSets\BankDataSet1.Designer.cs" />
+    <Compile Include="DataSets\BankDataSet2.Designer.cs" />
+    <Compile Include="DataSets\BankDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\CreditVoucher.Designer.cs" />
+    <Compile Include="DataSets\CreditVoucher1.Designer.cs" />
+    <Compile Include="DataSets\CreditVoucher2.Designer.cs" />
+    <Compile Include="DataSets\CreditVoucher3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DebitVoucherDataSet.Designer.cs" />
+    <Compile Include="DataSets\DebitVoucherDataSet1.Designer.cs" />
+    <Compile Include="DataSets\DebitVoucherDataSet2.Designer.cs" />
+    <Compile Include="DataSets\DebitVoucherDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\LeaveReportDataSet.Designer.cs" />
+    <Compile Include="DataSets\LeaveReportDataSet1.Designer.cs" />
+    <Compile Include="DataSets\LeaveReportDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\PerformanceDataSet.Designer.cs" />
+    <Compile Include="DataSets\PerformanceDataSet1.Designer.cs" />
+    <Compile Include="DataSets\PerformanceDataSet2.Designer.cs" />
+    <Compile Include="DataSets\PerformanceDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\StockDataSet.cs">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSets\StockDataSet.Designer.cs">
+      <DependentUpon>StockDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\StockDataSet1.Designer.cs" />
+    <Compile Include="DataSets\StockDataSet2.Designer.cs" />
+    <Compile Include="DataSets\StockDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\StockOutDataSet.cs">
+      <DependentUpon>StockOutDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSets\StockOutDataSet.Designer.cs">
+      <DependentUpon>StockOutDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\StockOutDataSet1.Designer.cs" />
+    <Compile Include="DataSets\StockOutDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockOutDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\WarningLetterDataSet.cs">
+      <DependentUpon>WarningLetterDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSets\WarningLetterDataSet.Designer.cs">
+      <DependentUpon>WarningLetterDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\WarningLetterDataSet1.Designer.cs" />
+    <Compile Include="DataSets\WarningLetterDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarningLetterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AfterManufactureStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\AfterManufactureStockIn.designer.cs">
+      <DependentUpon>AfterManufactureStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AfterManufactureStockOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\AfterManufactureStockOut.designer.cs">
+      <DependentUpon>AfterManufactureStockOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\EditStockOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\EditStockOut.designer.cs">
+      <DependentUpon>EditStockOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\FactorySaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\FactorySaveForm.Designer.cs">
+      <DependentUpon>FactorySaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductName.designer.cs">
+      <DependentUpon>ProductName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductStock.designer.cs">
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CCommonConstants.cs" />
+    <Compile Include="Model\ConfigManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForms\AccountStatementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\AccountStatementForm.Designer.cs">
+      <DependentUpon>AccountStatementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\AppoinmentLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\AppoinmentLetter.Designer.cs">
+      <DependentUpon>AppoinmentLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\BankStatementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\BankStatementReport.Designer.cs">
+      <DependentUpon>BankStatementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\CompanyWiseDatabaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\CompanyWiseDatabaseReport.Designer.cs">
+      <DependentUpon>CompanyWiseDatabaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherCreditACWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherCreditACWiseReport.designer.cs">
+      <DependentUpon>CreditVoucherCreditACWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherDatetoDateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherDatetoDateReport.designer.cs">
+      <DependentUpon>CreditVoucherDatetoDateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherExpenseWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherExpenseWiseReport.designer.cs">
+      <DependentUpon>CreditVoucherExpenseWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherSLNoWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\CreditVoucherSLNoWiseReport.designer.cs">
+      <DependentUpon>CreditVoucherSLNoWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherDatetoDateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherDatetoDateReport.designer.cs">
+      <DependentUpon>DebitVoucherDatetoDateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherDebitACWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherDebitACWiseReport.designer.cs">
+      <DependentUpon>DebitVoucherDebitACWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherIncomeWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherIncomeWiseReport.designer.cs">
+      <DependentUpon>DebitVoucherIncomeWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherSLNoWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\DebitVoucherSLNoWiseReport.designer.cs">
+      <DependentUpon>DebitVoucherSLNoWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\EmployeeWiseDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\EmployeeWiseDatabase.Designer.cs">
+      <DependentUpon>EmployeeWiseDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\JobConfirmationLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\JobConfirmationLetter.Designer.cs">
+      <DependentUpon>JobConfirmationLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\JobPromotionLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\JobPromotionLetter.Designer.cs">
+      <DependentUpon>JobPromotionLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\LeaveReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\LeaveReportForm.Designer.cs">
+      <DependentUpon>LeaveReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\PerformanceFormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\PerformanceFormReport.Designer.cs">
+      <DependentUpon>PerformanceFormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\AppoinmentLetterCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\AppoinmentLetterCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\AppoinmentLetterCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppoinmentLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\BankCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\BankCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\BankCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\BankStatementCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\BankStatementCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\BankStatementCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankStatementCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\ConfirmationLetterCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\ConfirmationLetterCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\ConfirmationLetterCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfirmationLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByCreditACCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByCreditACCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByCreditACCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherByCreditACCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByExpenserystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByExpenserystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\CreditVoucherByExpenserystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherByExpenserystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherBySLNoCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherBySLNoCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\CreditVoucherBySLNoCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherBySLNoCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherDatetoDateCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CreditVoucherDatetoDateCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\CreditVoucherDatetoDateCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditVoucherDatetoDateCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\CrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\CrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DatabaseCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\DatabaseCrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DatabaseCrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByDebitACCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByDebitACCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByDebitACCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherByDebitACCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByIncomeCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByIncomeCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\DebitVoucherByIncomeCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherByIncomeCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherBySLNoCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherBySLNoCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\DebitVoucherBySLNoCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherBySLNoCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherDatetoDateCrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\DebitVoucherDatetoDateCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\DebitVoucherDatetoDateCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitVoucherDatetoDateCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\JobPromotionLetterCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\JobPromotionLetterCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\JobPromotionLetterCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobPromotionLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\PerformanceCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\PerformanceCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\PerformanceCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetHoldListCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetHoldListCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetHoldListCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetHoldListCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetIndividualCrystalReport123.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetIndividualCrystalReport1231.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetIndividualCrystalReport1232.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetIndividualCrystalReport123.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetLocationWiseMonthlyCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetLocationWiseMonthlyCrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetLocationWiseMonthlyCrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetLocationWiseMonthlyCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetMonthlyCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetMonthlyCrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetMonthlyCrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetMonthlyCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetNewIndividualReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetNewIndividualReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetNewIndividualReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetNewIndividualReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySheetSummaryCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetSummaryCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySheetSummaryCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySheetSummaryCrystalReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalaryStatementCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SalaryStatementCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalaryStatementCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalaryStatementCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySummaryCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport2.cs" />
+    <Compile Include="ReportForms\Reports Another\SalarySummaryCrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySummaryCrystalReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SingleDatabaseCrystalReport1.cs" />
+    <Compile Include="ReportForms\Reports Another\SingleDatabaseCrystalReport11.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SingleDatabaseCrystalReport12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleDatabaseCrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\StockCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\StockCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\StockCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SummerySheetNewReport.cs" />
+    <Compile Include="ReportForms\Reports Another\SummerySheetNewReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\SummerySheetNewReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummerySheetNewReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\WarningLetterCrystalReport.cs" />
+    <Compile Include="ReportForms\Reports Another\WarningLetterCrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\Reports Another\WarningLetterCrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarningLetterCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportForms\StockOutChallenReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\StockOutChallenReport.Designer.cs">
+      <DependentUpon>StockOutChallenReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\StockOutDateToDateReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\StockOutDateToDateReportForm.Designer.cs">
+      <DependentUpon>StockOutDateToDateReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\StockOutInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\StockOutInvoiceReport.Designer.cs">
+      <DependentUpon>StockOutInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\StockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\StockReport.Designer.cs">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\WarningLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\WarningLetter.Designer.cs">
+      <DependentUpon>WarningLetter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account Form\AddMonthlySalary.resx">
+      <DependentUpon>AddMonthlySalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\AddNewCompany.resx">
+      <DependentUpon>AddNewCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\AddPhoto.resx">
+      <DependentUpon>AddPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\AppoinmentLetter.resx">
+      <DependentUpon>AppoinmentLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\BankAdviseReport.resx">
+      <DependentUpon>BankAdviseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\DatabaseEntry.resx">
+      <DependentUpon>DatabaseEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\DatabaseReport.resx">
+      <DependentUpon>DatabaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\LeaveForm.resx">
+      <DependentUpon>LeaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\PerformanceAppraisalForm.resx">
+      <DependentUpon>PerformanceAppraisalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\ProductName.resx">
+      <DependentUpon>ProductName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheet.resx">
+      <DependentUpon>SalarySheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheetHoldListReport.resx">
+      <DependentUpon>SalarySheetHoldListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheetIndividualReport.resx">
+      <DependentUpon>SalarySheetIndividualReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheetLocationWiseMonthlyReport.resx">
+      <DependentUpon>SalarySheetLocationWiseMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheetMonthlyReport.resx">
+      <DependentUpon>SalarySheetMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySheetPaySlipAllReport.resx">
+      <DependentUpon>SalarySheetPaySlipAllReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalaryStatement.resx">
+      <DependentUpon>SalaryStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SalarySummaryReport.resx">
+      <DependentUpon>SalarySummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\SingleEmployeeReport.resx">
+      <DependentUpon>SingleEmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\StockOutEmployeeReport.resx">
+      <DependentUpon>StockOutEmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\TechnicalSupport.resx">
+      <DependentUpon>TechnicalSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\WarningLetter.resx">
+      <DependentUpon>WarningLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account Form\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\AccountStatement.resx">
+      <DependentUpon>AccountStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\BankingStatement.resx">
+      <DependentUpon>BankingStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\CreateOpeningBalance.resx">
+      <DependentUpon>CreateOpeningBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\CreditVoucher.resx">
+      <DependentUpon>CreditVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\CustomerAccountPosting.resx">
+      <DependentUpon>CustomerAccountPosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\CustomerDatabase.resx">
+      <DependentUpon>CustomerDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\DebitVoucher.resx">
+      <DependentUpon>DebitVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\ExpenseHead.resx">
+      <DependentUpon>ExpenseHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\IncomeHead.resx">
+      <DependentUpon>IncomeHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\ManualAccountStatement.resx">
+      <DependentUpon>ManualAccountStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts\MarketPlanningForm.resx">
+      <DependentUpon>MarketPlanningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\AccountStatementCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountStatementCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\AppoinmentLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AppoinmentLetterCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\BankCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\BankStatementCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankStatementCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\ConfirmationLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConfirmationLetterCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CreditVoucherByCreditACCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherByCreditACCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CreditVoucherByCreditACCrystalReportSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherByCreditACCrystalReportSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CreditVoucherByExpenserystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherByExpenserystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CreditVoucherBySLNoCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherBySLNoCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CreditVoucherDatetoDateCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherDatetoDateCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DatabaseCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DatabaseCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DateToDateStockOutCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DateToDateStockOutCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DebitVoucherByDebitACCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherByDebitACCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DebitVoucherByDebitACCrystalReportSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherByDebitACCrystalReportSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DebitVoucherByIncomeCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherByIncomeCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DebitVoucherBySLNoCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherBySLNoCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\DebitVoucherDatetoDateCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherDatetoDateCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\JobPromotionLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JobPromotionLetterCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\LeaveCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LeaveCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\PerformanceCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PerformanceCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetHoldListCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetHoldListCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetIndividualCrystalReport123.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetIndividualCrystalReport123.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetLocationWiseMonthlyCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetLocationWiseMonthlyCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetMonthlyCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetMonthlyCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetNewIndividualReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetNewIndividualReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySheetSummaryCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetSummaryCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalaryStatementCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalaryStatementCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySummaryCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySummaryCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SalarySummaryCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySummaryCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SingleDatabaseCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SingleDatabaseCrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\StockCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\StockOutCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockOutCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\SummerySheetNewReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SummerySheetNewReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherReport\WarningLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WarningLetterCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\AfterManufactureStockIn.resx">
+      <DependentUpon>AfterManufactureStockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\AfterManufactureStockOut.resx">
+      <DependentUpon>AfterManufactureStockOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\EditStockOut.resx">
+      <DependentUpon>EditStockOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\FactorySaveForm.resx">
+      <DependentUpon>FactorySaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductName.resx">
+      <DependentUpon>ProductName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductStock.resx">
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportForms\AccountStatementForm.resx">
+      <DependentUpon>AccountStatementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\AppoinmentLetter.resx">
+      <DependentUpon>AppoinmentLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\BankStatementReport.resx">
+      <DependentUpon>BankStatementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\CompanyWiseDatabaseReport.resx">
+      <DependentUpon>CompanyWiseDatabaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\CreditVoucherCreditACWiseReport.resx">
+      <DependentUpon>CreditVoucherCreditACWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\CreditVoucherDatetoDateReport.resx">
+      <DependentUpon>CreditVoucherDatetoDateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\CreditVoucherExpenseWiseReport.resx">
+      <DependentUpon>CreditVoucherExpenseWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\CreditVoucherSLNoWiseReport.resx">
+      <DependentUpon>CreditVoucherSLNoWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\DebitVoucherDatetoDateReport.resx">
+      <DependentUpon>DebitVoucherDatetoDateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\DebitVoucherDebitACWiseReport.resx">
+      <DependentUpon>DebitVoucherDebitACWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\DebitVoucherIncomeWiseReport.resx">
+      <DependentUpon>DebitVoucherIncomeWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\DebitVoucherSLNoWiseReport.resx">
+      <DependentUpon>DebitVoucherSLNoWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\EmployeeWiseDatabase.resx">
+      <DependentUpon>EmployeeWiseDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\JobConfirmationLetter.resx">
+      <DependentUpon>JobConfirmationLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\JobPromotionLetter.resx">
+      <DependentUpon>JobPromotionLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\LeaveReportForm.resx">
+      <DependentUpon>LeaveReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\PerformanceFormReport.resx">
+      <DependentUpon>PerformanceFormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\AppoinmentLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AppoinmentLetterCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\BankCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\BankStatementCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankStatementCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\ConfirmationLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConfirmationLetterCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\CreditVoucherByCreditACCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherByCreditACCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\CreditVoucherByExpenserystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherByExpenserystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\CreditVoucherBySLNoCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherBySLNoCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\CreditVoucherDatetoDateCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditVoucherDatetoDateCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\DatabaseCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DatabaseCrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\DebitVoucherByDebitACCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherByDebitACCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\DebitVoucherByIncomeCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherByIncomeCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\DebitVoucherBySLNoCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherBySLNoCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\DebitVoucherDatetoDateCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitVoucherDatetoDateCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\JobPromotionLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JobPromotionLetterCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\PerformanceCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PerformanceCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetHoldListCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetHoldListCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetIndividualCrystalReport123.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetIndividualCrystalReport1232.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetLocationWiseMonthlyCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetLocationWiseMonthlyCrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetMonthlyCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetMonthlyCrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetNewIndividualReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetNewIndividualReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySheetSummaryCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySheetSummaryCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalaryStatementCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalaryStatementCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySummaryCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySummaryCrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SalarySummaryCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalarySummaryCrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SingleDatabaseCrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SingleDatabaseCrystalReport12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\StockCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\SummerySheetNewReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SummerySheetNewReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\Reports Another\WarningLetterCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WarningLetterCrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\StockOutChallenReport.resx">
+      <DependentUpon>StockOutChallenReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\StockOutDateToDateReportForm.resx">
+      <DependentUpon>StockOutDateToDateReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\StockOutInvoiceReport.resx">
+      <DependentUpon>StockOutInvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\StockReport.resx">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\WarningLetter.resx">
+      <DependentUpon>WarningLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AccountStatementDataSet.xsc">
+      <DependentUpon>AccountStatementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AccountStatementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountStatementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\AccountStatementDataSet.xss">
+      <DependentUpon>AccountStatementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AppoinmentDataSet.xsc">
+      <DependentUpon>AppoinmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AppoinmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppoinmentDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\AppoinmentDataSet.xss">
+      <DependentUpon>AppoinmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\BankDataSet.xsc">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\BankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\BankDataSet.xss">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\CreditVoucher.xsc">
+      <DependentUpon>CreditVoucher.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\CreditVoucher.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditVoucher3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\CreditVoucher.xss">
+      <DependentUpon>CreditVoucher.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DebitVoucherDataSet.xsc">
+      <DependentUpon>DebitVoucherDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DebitVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DebitVoucherDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DebitVoucherDataSet.xss">
+      <DependentUpon>DebitVoucherDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LeaveReportDataSet.xsc">
+      <DependentUpon>LeaveReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LeaveReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeaveReportDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\LeaveReportDataSet.xss">
+      <DependentUpon>LeaveReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\PerformanceDataSet.xsc">
+      <DependentUpon>PerformanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\PerformanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PerformanceDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\PerformanceDataSet.xss">
+      <DependentUpon>PerformanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\StockDataSet.xsc">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\StockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\StockDataSet.xss">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\StockOutDataSet.xsc">
+      <DependentUpon>StockOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\StockOutDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockOutDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\StockOutDataSet.xss">
+      <DependentUpon>StockOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\WarningLetterDataSet.xsc">
+      <DependentUpon>WarningLetterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\WarningLetterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WarningLetterDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\WarningLetterDataSet.xss">
+      <DependentUpon>WarningLetterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
